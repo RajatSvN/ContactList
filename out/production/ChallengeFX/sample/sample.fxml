@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+<top>
+
+    <MenuBar fx:id="menuBar" >
+
+    <menus>
+
+    <Menu text="Contacts">
+
+        <items>
+
+            <MenuItem fx:id="NEW" text="New" onAction="#openNewContactWindow"/>
+
+            <MenuItem fx:id="EDIT" text="Edit" onAction="#openEditContactWindow"/>
+
+            <MenuItem text="Delete" onAction="#openDeleteContactWindow"/>
+
+        </items>
+
+    </Menu>
+
+    </menus>
+
+    </MenuBar>
+
+</top>
+
+    <center>
+
+      <TableView fx:id="tableView">
+
+          <columns>
+
+          <TableColumn fx:id="firstName"  text="First Name" />
+
+          <TableColumn   fx:id="lastName" text="Last Name" />
+
+              <TableColumn  fx:id="phoneNumber" text="Phone Number" />
+
+            <TableColumn  fx:id="notes" text="Notes" />
+
+        </columns>
+
+      </TableView>
+
+    </center>
+
+</BorderPane>

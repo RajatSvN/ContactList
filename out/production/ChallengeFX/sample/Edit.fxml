@@ -1,0 +1,39 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="sample.EditController"
+          xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10" alignment="CENTER">
+
+    <Label text="Enter the phone Number of Contact you want to edit." GridPane.columnSpan="4"
+           GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <Label text="Enter number : " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="checkNumber"/>
+
+    <Button  text="Enter" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#loadDetails"/>
+
+    <Label text="Edit Contacts : " GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="status"/>
+
+    <Label text="First Name :" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+    <TextField  fx:id="firstName" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Last Name :" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+    <TextField  fx:id="lastName" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Phone Number :" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+
+    <TextField  fx:id="phoneNum" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+    <Label text="Notes :" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+
+    <TextField  fx:id="notes" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+    <Button fx:id="editor" text="Edit Contact" GridPane.rowIndex="8" GridPane.columnIndex="1"  onAction="#setContactDetails"/>
+
+</GridPane>
